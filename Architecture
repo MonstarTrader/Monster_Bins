@@ -1,0 +1,16 @@
+┌──────────────────────────────────────────────────┐
+│                    nx.py CLI                     │
+│         (argparse subcommands → handlers)        │
+└────────────────────────┬─────────────────────────┘
+                         │
+        ┌────────────────┼────────────────┐
+        ▼                ▼                ▼
+  ┌──────────┐    ┌─────────────┐   ┌──────────┐
+  │ BinEngine│    │ ResultStore │   │ Merchant │
+  │          │    │  (SQLite)   │   │ Ledger   │
+  └────┬─────┘    └─────────────┘   └──────────┘
+       │
+       ├── luhn_ok()           ISO/IEC 7812 checksum
+       ├── detect_brand()      Real prefix ranges
+       ├── _lookup()           Seed DB + binlist.net
+       └── compute_risk()      7-signal composite
