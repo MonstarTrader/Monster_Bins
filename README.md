@@ -62,23 +62,23 @@ data from real standards:
 No dependencies. Just Python 3.10 or newer.
 
 ```bash
-git clone https://github.com/MonstarTrader0/Monster_Bins.git
+git clone https://github.com/MonstarTrader/Monster_Bins.git
 
-cd bin-intelligence-engine
+cd Monster_Bins.py
 
-python nx.py doctor
+python Monster_Bins.py doctor
 
 # 1. Verify the engine
-python nx.py doctor
+python Monster_Bins.py doctor
 
 # 2. Show supported card networks
-python nx.py brands
+python Monster_Bins.py brands
 
 # 3. Search the BIN database
-python nx.py bins --filter hdfc
+python Monster_Bins.py bins --filter hdfc
 
 # 4. Look up a single BIN
-python nx.py lookup 453201
+python Monster_Bins.py lookup 453201
 
 # 5. Run the built-in demo
-python nx.py demo
+python Monster_Bins.py demo
